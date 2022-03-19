@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COMPOUND PROTOCOL</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       rel="shortcut icon"
       href="./assets/Ellipse 16.png"
@@ -15,29 +17,39 @@
   <body>
     <div class="main">
       <!-- NAVBAR -->
-      <div class="navbar">
-        <img src="./assets/Logo.svg" alt="" />
-        <div class="navOption">
-          <a href="">Features</a>
-          <a href="">How it works</a>
-          <a href="">Tokenomics</a>
-        </div>
-        <div class="buttonArea">
-          <a href="">Buy Token</a>
-          <div class="dapp">
-            <img src="./assets/Vector (2).png" alt="" />
-            <p>Dapp</p>
+      <div class="navigation" id="navigation">
+        <div class="navbar">
+          <img src="./assets/Logo.svg" alt="" id="navLogo" />
+          <div class="navOption" id="navOption">
+            <a href="#features">Features</a>
+            <a href="#how">How it works</a>
+            <a href="#tokenomics">Tokenomics</a>
           </div>
+          <div class="buttonArea" id="buttonArea">
+            <a href="">Buy Token</a>
+            <a
+              href="https://compoundprotocol.gitbook.io/whitepaper/"
+              target="_blank"
+            >
+              <div class="dapp">
+                <img src="./assets/Vector (2).png" alt="" />
+                <p>Dapp</p>
+              </div>
+            </a>
+          </div>
+          <img src="./assets/mob/side menu.svg" alt="" id="hamburger" />
+          <img src="./assets/mob/Vector.svg" alt="" id="close" />
         </div>
       </div>
-
       <!-- heroSection -->
       <div class="heroSection">
         <div class="heroSocial">
-          <a href=""><img src="./assets/facebook-f 1.svg" alt="" /></a>
-          <a href=""><img src="./assets/instagram 1.svg" alt="" /></a>
-          <a href=""><img src="./assets/Artboard.svg" alt="" /></a>
-          <a href=""><img src="./assets/twitter 1.svg" alt="" /></a>
+          <a href="http://t.me/compoundprotocol" target="_blank"
+            ><img src="./assets/Artboard.svg" alt=""
+          /></a>
+          <a href="http://Twitter.com/CProtocolbsc" target="_blank"
+            ><img src="./assets/twitter 1.svg" alt=""
+          /></a>
         </div>
         <div class="heroContent">
           <p>Compound coin Auto staking protocol</p>
@@ -51,7 +63,11 @@
             end of year
           </h6>
           <div class="heroContentButtons">
-            <button>Whitepaper</button>
+            <a
+              href="https://compoundprotocol.gitbook.io/whitepaper/"
+              target="_blank"
+              ><button>Whitepaper</button></a
+            >
             <div class="seeMore">
               <p id="seeChart">See Chart</p>
               <img src="./assets/Polygon 1.svg" alt="" />
@@ -66,8 +82,8 @@
       </div>
 
       <!-- Featured -->
-      <div class="featured">
-        <div class="leftSide">
+      <div class="featured" id="features">
+        <div class="leftSide" data-aos="fade-right">
           <div class="ourFeature">
             <img src="./assets/Rectangle 77.png" alt="" />
             <p>OUR FEATURES</p>
@@ -87,7 +103,7 @@
           </div>
         </div>
         <div class="rightSide">
-          <div class="firstRight">
+          <div class="firstRight" data-aos="flip-left">
             <div class="firsRightLeft">
               <div class="firsRightLeftContent">
                 <div class="firstRIghtLogo">
@@ -102,7 +118,7 @@
                 </h6>
               </div>
             </div>
-            <div class="secondRight">
+            <div class="secondRight" data-aos="flip-left">
               <div class="secondRightLogo">
                 <img src="./assets/Frame 10 (2).svg" alt="" />
                 <p>Automatic Staking</p>
@@ -113,7 +129,7 @@
               </p>
             </div>
           </div>
-          <div class="firstRight" id="nobroderbottom">
+          <div class="firstRight" id="nobroderbottom" data-aos="flip-left">
             <div class="secondRight" id="anotherBorder">
               <div class="secondRightLogo">
                 <img src="./assets/Frame 10.svg" alt="" />
@@ -124,7 +140,7 @@
                 times daily
               </p>
             </div>
-            <div class="secondRight">
+            <div class="secondRight" data-aos="flip-left">
               <div class="secondRightLogo">
                 <img src="./assets/Frame 10 (1).svg" alt="" />
                 <p>Hold & Earn</p>
@@ -137,19 +153,17 @@
           </div>
         </div>
       </div>
-      <div class="queto">
-        <img src="./assets/Einstein Quote.png" alt="" />
-      </div>
+      <div class="queto"></div>
 
       <!-- THE PROCESS -->
-      <div class="theProcess">
+      <div class="theProcess" id="how">
         <div class="ourFeature">
           <img src="./assets/Rectangle 77.png" alt="" />
-          <p>THE PROCESS</p>
+          <p data-aos="fade-right">THE PROCESS</p>
         </div>
-        <h2>How it Works</h2>
+        <h2 data-aos="fade-left">How it Works</h2>
         <div class="firstLineProcess">
-          <div class="fistProcess">
+          <div class="fistProcess" data-aos="fade-down-right">
             <img src="./assets/Group 49.png" alt="" />
             <h3>Auto compounding</h3>
             <p>
@@ -162,7 +176,7 @@
             </p>
           </div>
 
-          <div class="fistProcess">
+          <div class="fistProcess" data-aos="zoom-out-up">
             <img src="./assets/Group 50.png" alt="" />
             <h3>Compound sustainable fund</h3>
             <p>
@@ -172,7 +186,7 @@
             </p>
           </div>
 
-          <div class="fistProcess">
+          <div class="fistProcess" data-aos="fade-down-left">
             <img src="./assets/Group 51.png" alt="" />
             <h3>Compound treasury fund</h3>
             <p>
@@ -184,7 +198,11 @@
         </div>
 
         <div id="secondLineProcess">
-          <div class="fistProcess" id="fistProcessHey">
+          <div
+            class="fistProcess"
+            id="fistProcessHey"
+            data-aos="fade-down-right"
+          >
             <img src="./assets/Group 52.png" alt="" />
             <h3>The Fire Pit</h3>
             <p>
@@ -195,7 +213,7 @@
             </p>
           </div>
 
-          <div class="fistProcess">
+          <div class="fistProcess" data-aos="fade-down-left">
             <img src="./assets/Group 53.png" alt="" />
             <h3>Auto Liquidity System</h3>
             <p>
@@ -207,8 +225,8 @@
       </div>
 
       <!-- TOKENOMICS -->
-      <div class="tokenomics">
-        <div class="tokenomicsLeft">
+      <div class="tokenomics" id="tokenomics">
+        <div class="tokenomicsLeft" data-aos="fade-down-right">
           <div class="leftHead">
             <img src="./assets/white.png" alt="" />
             <p>TOKENOMICS</p>
@@ -220,7 +238,7 @@
             <span id="listItem">. Greatly reducing dowside Risk</span>
           </h5>
         </div>
-        <div class="tokenomicsRight">
+        <div class="tokenomicsRight" data-aos="fade-left">
           <img src="./assets/Chart.svg" alt="" />
         </div>
       </div>
@@ -228,30 +246,72 @@
       <!-- FOOTER -->
       <div class="footer">
         <div class="footerMain">
-          <img id="footerLogo" src="./assets/footerLogo.svg" alt="" />
-          <div class="secondFooterMain">
+          <img
+            id="footerLogo"
+            src="./assets/footerLogo.svg"
+            alt=""
+            data-aos="fade-down-right"
+          />
+          <div class="secondFooterMain" data-aos="zoom-in-up">
             <h4>QUICK LINK</h4>
-            <a href="">Features</a>
-            <a href="">How It works</a>
-            <a href="">Features</a>
+            <a href="#features">Features</a>
+            <a href="#how">How it works</a>
+            <a href="#tokenomics">Tokenomics</a>
           </div>
-          <div class="secondFooterMain">
+          <div class="secondFooterMain" data-aos="zoom-in-down">
             <h4>RESOURCES</h4>
-            <a href="">Download Whitepaper</a>
+            <a
+              href="https://compoundprotocol.gitbook.io/whitepaper/"
+              target="_blank"
+              >Download Whitepaper</a
+            >
             <a href="">Smart Token</a>
           </div>
-          <div class="footerSocial">
+          <div class="footerSocial" data-aos="fade-left">
             <h4>FOLLOW OUR SOCIALS</h4>
             <div class="footerSocialsIcon">
-              <a href=""><img src="./assets/facebookfooter.svg" alt="" /></a>
-              <a href=""><img src="./assets/instagram 1footer.svg" alt="" /></a>
-              <a href=""><img src="./assets/telegram.svg" alt="" /></a>
-              <a href=""><img src="./assets/twitterfoot.svg" alt="" /></a>
+              <a href="http://t.me/compoundprotocol"
+                ><img src="./assets/telegram.svg" alt="" target="_blank"
+              /></a>
+              <a href="http://Twitter.com/CProtocolbsc" target="_blank"
+                ><img src="./assets/twitterfoot.svg" alt=""
+              /></a>
             </div>
           </div>
         </div>
-        <p>COPYRIGHT © 2022 — COMPOUND PROTOCOL</p>
+        <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          COPYRIGHT © 2022 — COMPOUND PROTOCOL
+        </p>
       </div>
     </div>
+
+    <script>
+      var hamburger = document.getElementById("hamburger");
+      var close = document.getElementById("close");
+      hamburger.addEventListener("click", () => {
+        document.getElementById("navigation").style.background = "#221936";
+        document.getElementById("navigation").style.height = "100vh";
+        document.getElementById("navOption").style.display = "block";
+        document.getElementById("buttonArea").style.display = "block";
+        document.getElementById("navOption").style.display = "flex";
+        document.getElementById("navOption").style.flexDirection = "column";
+        document.getElementById("navLogo").style.display = "none";
+        document.getElementById("hamburger").style.display = "none";
+        document.getElementById("close").style.display = "block";
+      });
+
+      close.addEventListener("click", () => {
+        document.getElementById("navigation").style.background = "transparent";
+        document.getElementById("navigation").style.height = "100%";
+        document.getElementById("navOption").style.display = "none";
+        document.getElementById("buttonArea").style.display = "none";
+        document.getElementById("navLogo").style.display = "block";
+        document.getElementById("hamburger").style.display = "block";
+        document.getElementById("close").style.display = "none";
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
